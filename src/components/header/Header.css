@@ -1,0 +1,52 @@
+.header {
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+a > span:hover {
+  background: linear-gradient(to right, #dc2430, #7b4397);
+  background-clip: text;
+  color: transparent;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__icon {
+  width: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.header__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #dc2430, #7b4397);
+  background-clip: text;
+  color: transparent;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
