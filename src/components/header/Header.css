@@ -50,3 +50,27 @@ a > span:hover {
 .user__avatar {
   font-size: 2rem;
 }
+
+/* For tablets: */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* For mobile phones: */
+@media screen and (max-width: 739px) {
+.header {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+}
+  .header__name {
+    display: none;
+  }
+  .header__icon {
+    width: 30px;
+  }
+  a > span {
+    font-size: 1rem;
+    display: inline;
+    margin: 0 5px;
+  }
+}

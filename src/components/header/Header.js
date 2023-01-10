@@ -11,7 +11,7 @@ const Header = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className="header__logo">
             <img alt="" className="header__icon" src={Logo} />
-            <span className="header__name" >Wayflix</span>
+            <span className="header__name">Wayflix</span>
           </div>
         </Link>
         <Link to="/movies/popular" style={{ textDecoration: "none" }}>

@@ -30,6 +30,10 @@
 }
 
 .movie__poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.8rem;
   width: 300px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
@@ -62,6 +66,9 @@
 }
 
 .movie__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   margin: 1.25rem 0;
 }
 
@@ -93,6 +100,7 @@
   position: relative;
   bottom: 120px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
 }
@@ -131,6 +139,7 @@
 .movie__production {
   width: 85%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 4rem;
@@ -146,4 +155,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* For tablets: */
+@media screen and (max-width: 1024px) {
+  .movie__detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .movie__detailRight {
+    margin-top: 4rem;
+  }
+  .movie__poster {
+    margin-top: -15rem;
+  }
+}
+
+/* For mobile phones: */
+@media screen and (max-width: 739px) {
+  .movie__links {
+    position: static;
+    margin-top: 10rem;
+    gap: 5px;
+  }
+  .movie__heading {
+    width: 75%;
+  }
 }

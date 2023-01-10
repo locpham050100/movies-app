@@ -55,3 +55,26 @@
 .fa-star {
   color: yellow;
 }
+
+/* For tablets: */
+@media screen and (max-width: 1024px) {
+}
+
+/* For mobile phones: */
+@media screen and (max-width: 739px) {
+  .posterImage__description {
+    display: none;
+  }
+  .posterImage__title {
+    font-size: 2rem;
+  }
+  
+  .posterImage__runtime {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .posterImage__rating {
+    margin-left: 1.5rem;
+  }
+}
